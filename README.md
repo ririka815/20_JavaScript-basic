@@ -5,6 +5,50 @@
 1. 10月５日（木）はじめの一歩
 2. 10月5日（木）GitHub　リポジトリ作成
 
+### 10 月 19　日
+
+- テンプレートリテラル
+- 配列
+- for文
+
+
+### テンプレートリテラル
+```js
+console.log(`7 ✕ ${i + 1} = ${7 * (i + 1)}`);
+```
+
+## 配列
+```js
+ //宣言・代入
+ //["0", "1", "2"]
+        const animals = ["dog", "cat", "bird"];
+
+        //確認
+        console.log(animals);
+        //長さ
+        console.log(animals.lenght);
+        //cat
+        console.log(animals[1]);
+```
+
+### for文
+```js
+//i < fruits.length;はリスト全部を指定することができる
+for (let i = 0; i < fruits.length; i++) {
+            //liに創出する
+            const lilast = document.createElement("li");
+
+            //liに値（果物・配列fruitsの中にある）を代入
+            console.log(fruits[i]);//りんご・もも・バナナが取れる
+
+            //算出したliの内容に果物を代入
+            lilast.textContent = fruits[i];
+
+            //ul内の最後に追加
+            element.appendChild(lilast);
+        }
+```
+
 
 ## 10 月　12 日　
 
@@ -17,8 +61,6 @@
 - 文字列の扱い
 
 - リストを操作するDOM操作のスクリプト
-
-
 
 ### 文字列の計算
 
@@ -102,7 +144,7 @@ console.log(s.length);//文字数
         console.log(element3);
 
         const lilast = document.createElement("li");
-        console.dir(lilast);//dir二変更。オブジェクトの中身が見える。
+        console.dir(lilast);//dirに変更。オブジェクトの中身が見える。
         lilast.textContent = "メロン";
         console.log(lilast);
 ```
