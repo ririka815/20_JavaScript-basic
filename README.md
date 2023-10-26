@@ -5,11 +5,20 @@
 1. 10月５日（木）はじめの一歩
 2. 10月5日（木）GitHub　リポジトリ作成
 
+### 10 月　２6　日
+
+- querySelectorAll
+- getElementById
+- getElementsByTagName, getElementsByClassName
+
+
+
 ### 10 月 19　日
 
 - テンプレートリテラル
 - 配列
 - for文
+-
 
 
 ### テンプレートリテラル
@@ -36,6 +45,7 @@ console.log(`7 ✕ ${i + 1} = ${7 * (i + 1)}`);
 //i < fruits.length;はリスト全部を指定することができる
 for (let i = 0; i < fruits.length; i++) {
             //liに創出する
+            //createElementはもともとただの文字だったものをliに変換してHTMにliとして読み込むために使う
             const lilast = document.createElement("li");
 
             //liに値（果物・配列fruitsの中にある）を代入
@@ -45,6 +55,7 @@ for (let i = 0; i < fruits.length; i++) {
             lilast.textContent = fruits[i];
 
             //ul内の最後に追加
+//elementの中にlilastを追加する
             element.appendChild(lilast);
         }
 ```
