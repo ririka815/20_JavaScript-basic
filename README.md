@@ -5,6 +5,40 @@
 1. 10月５日（木）はじめの一歩
 2. 10月5日（木）GitHub　リポジトリ作成
 
+
+### 11 月 2　日
+
+- クリックイベント基本的な流れ
+
+### クリックイベント基本的な流れ
+
+```js
+ const dacingBtn = document.querySelector(".dancing");
+    const stopBtn = document.querySelector(".stop");
+    const changeBtn = document.querySelector(".change");
+
+    const dancer = document.querySelector(".imgArea img");
+
+    //dacingBtnをクリックすると
+    dacingBtn.addEventListener("click", function () {
+         //dancerにclass="dance"が設定される
+      dancer.setAttribute("class", "dance");
+    });
+
+    stopBtn.addEventListener("click", function () {
+      dancer.removeAttribute("class");
+    });
+
+    changeBtn.addEventListener("click", function () {
+      dancer.setAttribute("src", "images/ballet_woman.png");
+      dancer.setAttribute("alt", "バレリーナいらすと");
+    });
+
+    //elem.setAttribute(name, value); //値を設定します。
+    //elem.removeAttribute(name); //属性を削除します。
+```
+
+
 ### 10 月　２6　日
 
 - querySelectorAll
@@ -18,7 +52,6 @@
 - テンプレートリテラル
 - 配列
 - for文
--
 
 
 ### テンプレートリテラル
@@ -26,7 +59,7 @@
 console.log(`7 ✕ ${i + 1} = ${7 * (i + 1)}`);
 ```
 
-## 配列
+### 配列
 ```js
  //宣言・代入
  //["0", "1", "2"]

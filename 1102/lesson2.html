@@ -24,19 +24,37 @@
         //element.setAttribute("class","??")
         const text = document.querySelector("p span");
 
-        //赤くなくイベント
+        //赤くなるイベント
         const redBtn = document.querySelector(".redder");
         redBtn.addEventListener("click", function () {
             //属性値の値を設定
-            text.setAttribute("class", "redText");
+            text.classList.toggle("redText");
+            redBtn.textContent = "もとに戻す";
+            //redBtn.innertext = "もとに戻す";
         });
 
         //大きくなるイベント
         const bigBtn = document.querySelector(".bigger");
         bigBtn.addEventListener("click", function () {
             //属性値の値を設定
-            text.setAttribute("class", "bigText");
+            text.classList.toggle("bigText");
+            bigBtn.textContent = "もとに戻す";
         });
+
+        const bigBtn1 = document.querySelector(".bigger");
+        bigBtn.addEventListener("click", function () {
+            //属性値の値を設定
+            text.classList.toggle("bigText");
+            bigBtn.innerText = "もとに戻す";
+
+            if (text.classList.contains("bigText")) {
+                bigBtn.innerText = "もとに戻す";
+            } else {
+                bigBtn.innerText = "大きくなる";
+            }
+        });
+
+
 
     </script>
 </body>
