@@ -41,6 +41,11 @@
     console.log(takana.textContent);
 
     //class="negi"をquerySelectorAllで取得し、for文で全てをコンソールで表示
+    const negi = document.querySelectorAll('.negi');
+    for (let i = 0; i < negi.length; i++) {
+      console.log(negi[i].textContent);
+    }
+
   </script>
 </body>
 
